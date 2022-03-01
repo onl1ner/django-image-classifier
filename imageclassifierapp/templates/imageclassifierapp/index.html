@@ -16,18 +16,9 @@
      <h1 class="mb-3">Image Classifier</h1>
      <form action="" method="post" enctype="multipart/form-data">
       {% csrf_token %}
-      {{form}}
+      {{form.as_p}}
       <input type="submit" class="btn btn-danger" value="Upload">
      </form>
-    </div>
-    <div class="row">
-     {% for x in img %}
-      <div class="col-sm-4">
-       <div class="card m-2">
-        <img src="{{x.photo.url}}" alt="" class="card-img-top" height="200px">
-       </div>
-      </div>
-     {% endfor %}
     </div>
    </div>
 
