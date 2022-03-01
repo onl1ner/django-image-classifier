@@ -21,6 +21,5 @@ from imageclassifierapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
     path('', include('imageclassifierapp.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
