@@ -19,11 +19,13 @@
                 <form action="" method="post" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <input type="submit" class="btn btn-danger" value="Upload">
+                    <button type="submit" class="btn btn-danger" value="Upload" >Upload</button>
                 </form>
+                <div>
                 {% if prediction is defined %}
                     <h3>{{ prediction }}</h3>
                 {% endif %}
+                </div>
             </div>
         </div>
         <!-- Optional JavaScript; choose one of the two! -->
