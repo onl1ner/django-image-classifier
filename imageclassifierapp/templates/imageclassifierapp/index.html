@@ -21,11 +21,11 @@
                     {{ form.as_p }}
                     <button type="submit" class="btn btn-danger" value="Upload" >Upload</button>
                 </form>
-                <div>
-                {% if prediction is defined %}
-                    <small class="text">{{ prediction }}</small>
+                {% if prediction %}
+                    <div>
+                        Classification: {{ prediction }}
+                    </div>
                 {% endif %}
-                </div>
             </div>
         </div>
         <!-- Optional JavaScript; choose one of the two! -->
