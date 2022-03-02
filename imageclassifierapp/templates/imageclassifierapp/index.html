@@ -21,13 +21,20 @@
                     {{ form.as_p }}
                     <button type="submit" class="btn btn-danger" value="Upload" >Upload</button>
                 </form>
-                {% if prediction %}
-                    <div>
-                        Classification: {{ prediction }}
+            </div>
+            <div class="row">
+                    {% if prediction %}
+                <div class="col-sm-4">
+                    <div class="card m-2">
+                         <div class="card-footer">
+                            Classification: {{ prediction }}
+                         </div>
                     </div>
+                </div>
                 {% endif %}
             </div>
         </div>
+
         <!-- Optional JavaScript; choose one of the two! -->
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
