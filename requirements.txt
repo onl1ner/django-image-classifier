@@ -3,5 +3,5 @@ keras==2.8.0
 numpy==1.22.1
 Pillow==9.0.1
 python-decouple==3.6
-tensorflow==2.8.0
+tensorflow-cpu==2.8.0
 django-heroku==0.3.1
