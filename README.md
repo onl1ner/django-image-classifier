@@ -27,11 +27,6 @@ $ pip install -r requirements.txt
 
 ```
 SECRET_KEY=
-DEBUG=
-DB_NAME=
-DB_USER=
-DB_PASSWORD=
-DB_HOST=
 ```
 
 - Run application:
